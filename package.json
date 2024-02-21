@@ -1,0 +1,22 @@
+{
+  "name": "prj-1",
+  "version": "1.0.0",
+  "description": "meu primeiro prj type script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "type",
+    "script",
+    "js",
+    "java",
+    "script",
+    "padronizado"
+  ],
+  "author": "Bruno Gressler da Silveira",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
