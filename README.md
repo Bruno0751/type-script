@@ -1,3 +1,5 @@
+node 12.22.12
+npm 6.14.16
 
 sudo apt-get install node-typescript --> linux
 
