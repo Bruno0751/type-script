@@ -3,22 +3,12 @@
 let nome: string
 let idade: number
 let blAtivo: boolean
-
+///////////////////////////////////////////////
 // OBJETOS
 let obj: object 
-obj = {
-    nome: 'bruno',
-    idade: 27,
-    bl: true
-}
 let obj1: Record<string, string>
-obj1 = {
-    nome: 'bruno',
-    idade: '27',
-    bl: 'true'
-}
 interface Usuario {}
-
+///////////////////////////////////////////////
 // ARRAYS
 let lista: [
     'bruno',
@@ -33,21 +23,33 @@ let lista3: [
 ]
 let lista1: string[]
 lista1 = ['1', '2', '3', '4']
-
+///////////////////////////////////////////////
 // TYPE
 type Id = number | string
 let id: Id // union
-
-interface Aluno {
+///////////////////////////////////////////////
+//OBJETS+
+interface Pessoa {
     nome: string,
-    idade: number
+    idade: number,
+    carro?: string
 }
-type Curso = {
-    curso: string,
+type Aluno = {
     ra: number
-} & Aluno
-// interface Curso extends Aluno{
-//     curso: string,
-//     ra: number
-// }
-let aluno: Curso
+} & Pessoa
+let aluno: Aluno
+aluno = {nome: 'teste', idade: 13, ra: 4563}
+///////////////////////////////////////////////
+interface Pessoa2<T> {
+    nome: string,
+    proffisao: T
+}
+interface Engenheiro {
+    crea: number
+}
+interface Medico {
+    crm: number
+}
+let medico: Pessoa2<Medico>
+
+// medico.proffisao.crm = 55
